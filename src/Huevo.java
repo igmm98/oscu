@@ -132,11 +132,11 @@ public class Huevo {
 	@SuppressWarnings("resource")
 	private int Validacion(String var) 
 	{
-		int val = 0;
+		int val;
 		boolean ciclo = true;
 		do 
 		{
-			
+			val = 0;
 			try 
 			{
 				val = Integer.parseInt(var);

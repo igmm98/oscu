@@ -32,6 +32,7 @@ public class Oscurilandia {
 				break;
 			case 2:
 				tablero.MostrarMatriz();
+				tablero.CalcularPuntaje();
 				break;
 			case 3:
 				tablero.MatrizHuevos();

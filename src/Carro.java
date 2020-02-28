@@ -11,6 +11,16 @@ import java.util.ArrayList;
  */
 public class Carro {
 	
+	public Carro() {}
+	
+	@SuppressWarnings("rawtypes")
+	public Carro(int cantOcupantes, String fechaIngreso, ArrayList<ArrayList> ubiTablero) 
+	{
+		this.cantOcupantes = cantOcupantes;
+		this.fechaIngreso = fechaIngreso;
+		this.ubiTablero = ubiTablero;
+	}
+	
 	private int cantOcupantes = 0; // CANTIDAD DE OCUPANTES CARRO
 	
 	private String fechaIngreso = ""; // FECHA DE INGRESO DEL CARRO

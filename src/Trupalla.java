@@ -9,9 +9,21 @@ import java.util.Random;
 
 public class Trupalla extends Carro {
 	
+	public Trupalla() {}
+	
+	@SuppressWarnings("rawtypes")
+	public Trupalla(int nvlArmaduraTrupalla, String manipuladorTrupalla, int cantOcupantes, String fechaIngreso, ArrayList<ArrayList> ubiTablero)
+	{
+		this.nvlArmaduraTrupalla = nvlArmaduraTrupalla;
+		this.manipuladorTrupalla = manipuladorTrupalla;
+		this.cantOcupantes = cantOcupantes;
+		this.fechaIngreso = fechaIngreso;
+		this.ubiTablero = ubiTablero;
+	}
+	
 	private int nvlArmaduraTrupalla = 3;
 	
-	private String manupiladorTrupalla = "Peter Parker";
+	private String manipuladorTrupalla = "Peter Parker";
 	
 	
 	private int cantOcupantes = 0;
@@ -31,7 +43,7 @@ public class Trupalla extends Carro {
 	}
 	public void SetManipuladorTrupalla(String manipuladorTrupalla) 
 	{
-		this.manupiladorTrupalla = manipuladorTrupalla;
+		this.manipuladorTrupalla = manipuladorTrupalla;
 	}
 	public int GetNvlArmaduraTrupalla() 
 	{
@@ -39,7 +51,7 @@ public class Trupalla extends Carro {
 	}
 	public String GetManipuladorTrupalla() 
 	{
-		return this.manupiladorTrupalla;
+		return this.manipuladorTrupalla;
 	}
 	
 	
@@ -79,7 +91,7 @@ public class Trupalla extends Carro {
 	
 	public String ToString() 
 	{
-		String var = "Conductor: "+this.manupiladorTrupalla+"\nNivel de armadura: "+this.nvlArmaduraTrupalla+
+		String var = "Conductor: "+this.manipuladorTrupalla+"\nNivel de armadura: "+this.nvlArmaduraTrupalla+
 					 "\nCantidad de ocupantes: "+this.cantOcupantes+"\nFecha de ingreso: "+this.fechaIngreso+"\nUbicaciones: "+this.ubiTablero;
 		return var;
 	}

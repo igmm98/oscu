@@ -9,6 +9,18 @@ import java.util.Random;
 
 public class Kromi extends Carro {
 	
+	public Kromi() {}
+	
+	@SuppressWarnings("rawtypes")
+	public Kromi(int anioFabKromi, String marcaKromi, int cantOcupantes, String fechaIngreso, ArrayList<ArrayList> ubiTablero)
+	{
+		this.anioFabKromi = anioFabKromi;
+		this.marcaKromi = marcaKromi;
+		this.cantOcupantes = cantOcupantes;
+		this.fechaIngreso = fechaIngreso;
+		this.ubiTablero = ubiTablero;
+	}
+	
 	private int anioFabKromi = 2020;
 	
 	private String marcaKromi = "Mercedes Benz";

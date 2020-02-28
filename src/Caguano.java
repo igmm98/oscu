@@ -9,6 +9,18 @@ import java.util.Random;
 
 public class Caguano extends Carro {
 	
+	public Caguano() {}
+	
+	@SuppressWarnings("rawtypes")
+	public Caguano(int alcanceTiroCaguano, String colorConfetiCaguano, int cantOcupantes, String fechaIngreso, ArrayList<ArrayList> ubiTablero)
+	{
+		this.alcanceTiroCaguano = alcanceTiroCaguano;
+		this.colorConfetiCaguano = colorConfetiCaguano;
+		this.cantOcupantes = cantOcupantes;
+		this.fechaIngreso = fechaIngreso;
+		this.ubiTablero = ubiTablero;
+	}
+	
 	private int alcanceTiroCaguano = 1; 
 	
 	private String colorConfetiCaguano = "Rojo";
